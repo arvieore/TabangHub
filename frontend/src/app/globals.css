@@ -31,3 +31,10 @@
     text-wrap: balance;
   }
 }
+
+body{
+  /* background-color: hsl(203, 24%, 15%); */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
