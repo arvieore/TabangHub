@@ -34,7 +34,7 @@ export default function Login(){
               </div>
 
               <div>
-                <Link href='/Dashboard' className="flex w-full justify-center rounded-md bg-[#00df9a] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#33f2b7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500">Sign-in</Link>
+                <Link href='/dashboard' className="flex w-full justify-center rounded-md bg-[#00df9a] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#33f2b7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500">Sign-in</Link>
               </div>
             </form>
             <div className="text-sm mt-3">
@@ -42,7 +42,7 @@ export default function Login(){
                   </div>
             <p className="mt-5 text-center text-sm text-gray-400">
               Dont have an account?
-              <Link href="/Register" className="font-semibold leading-6 text-[#00df9a] hover:text-[#33f2b7]"> Register</Link>
+              <Link href="/register" className="font-semibold leading-6 text-[#00df9a] hover:text-[#33f2b7]"> Register</Link>
             </p>
           </div>
         </div>
