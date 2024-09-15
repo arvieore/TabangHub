@@ -15,7 +15,7 @@ export default function Cards() {
           <CardMedia
             component="img"
             height="140"
-            image="./Cleaning.jpg"
+            image="../Cleaning.jpg"
             alt="Cleaning Campaign"
           />
           <CardContent>
@@ -27,7 +27,7 @@ export default function Cards() {
             </Typography>
             <Button
               component={Link}
-              href="/details"
+              href="/volunteer/details"
               variant="contained"
               sx={{ backgroundColor: '#00df9a', mt: 2, '&:hover': { backgroundColor: '#33f2b7' } }}
             >
@@ -44,7 +44,7 @@ export default function Cards() {
           <CardMedia
             component="img"
             height="140"
-            image="./Donation.jpg"
+            image="../Donation.jpg"
             alt="Donation Campaign"
           />
           <CardContent>
@@ -56,7 +56,7 @@ export default function Cards() {
             </Typography>
             <Button
               component={Link}
-              href="/details"
+              href="/volunteer/details"
               variant="contained"
               sx={{ backgroundColor: '#00df9a', mt: 2, '&:hover': { backgroundColor: '#33f2b7' } }}
             >
@@ -73,7 +73,7 @@ export default function Cards() {
           <CardMedia
             component="img"
             height="140"
-            image="./Planting.jpg"
+            image="../Planting.jpg"
             alt="Planting Campaign"
           />
           <CardContent>
@@ -85,7 +85,7 @@ export default function Cards() {
             </Typography>
             <Button
               component={Link}
-              href="/details"
+              href="/volunteer/details"
               variant="contained"
               sx={{ backgroundColor: '#00df9a', mt: 2, '&:hover': { backgroundColor: '#33f2b7' } }}
             >

@@ -45,7 +45,7 @@ export default function NavBar() {
             variant="h6"
             noWrap
             component="a"
-            href="/dashboard"
+            href="/volunteer/dashboard"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },

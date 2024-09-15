@@ -6,7 +6,7 @@ import Navbar from '../dashboard/components/Navbar';
 export default function CardDetails() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Box 
                 sx={{
                     borderRadius: '4rem 0 4rem 0',
