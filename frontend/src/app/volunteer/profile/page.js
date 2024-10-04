@@ -1,12 +1,10 @@
-import NavBar from "../dashboard/components/Navbar";
-import Profile from "./components/profile";
-import Aboutme from "./components/aboutme";
+import Profile from "./Profilecomponents/profile";
+import Aboutme from "./Profilecomponents/aboutme";
 
 export default function Page() {
     
     return(
         <>
-            {/* <NavBar /> */}
             <Profile />
             <Aboutme />
         </>

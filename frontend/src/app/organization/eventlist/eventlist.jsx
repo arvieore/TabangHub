@@ -22,7 +22,7 @@ export default function EventList() {
       endDate: "5/15/2024 11:59:00 PM",
       participants: 60,
       skills: ["Planting", "Team Building"],
-      image: "/Planting.jpg"
+      image: "/images/Planting.jpg"
     },
     {
       title: "Community Donation Drive",
@@ -32,7 +32,7 @@ export default function EventList() {
       endDate: "7/18/2024 5:00:00 PM",
       participants: 70,
       skills: ["Logistics", "Team Coordination"],
-      image: "/Donation.jpg"
+      image: "/images/Donation.jpg"
     },
     {
       title: "Community Cleaning Initiative",
@@ -42,7 +42,7 @@ export default function EventList() {
       endDate: "8/12/2024 12:00:00 PM",
       participants: 50,
       skills: ["Waste Management", "Leadership"],
-      image: "/Cleaning.jpg"
+      image: "/images/Cleaning.jpg"
     }
   ];
 

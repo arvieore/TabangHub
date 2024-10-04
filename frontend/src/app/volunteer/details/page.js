@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Box, Button } from '@mui/material';
 import Image from 'next/image';
-import Navbar from '../dashboard/components/Navbar';
+import Navbar from '../components/Navbar';
 
 export default function CardDetails() {
     return (

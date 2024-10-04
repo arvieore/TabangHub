@@ -15,7 +15,7 @@ export default function Cards() {
           <CardMedia
             component="img"
             height="140"
-            image="../Cleaning.jpg"
+            image="/images/Cleaning.jpg"
             alt="Cleaning Campaign"
           />
           <CardContent>
@@ -44,7 +44,7 @@ export default function Cards() {
           <CardMedia
             component="img"
             height="140"
-            image="../Donation.jpg"
+            image="/images/Donation.jpg"
             alt="Donation Campaign"
           />
           <CardContent>
@@ -73,7 +73,7 @@ export default function Cards() {
           <CardMedia
             component="img"
             height="140"
-            image="../Planting.jpg"
+            image="/images/Planting.jpg"
             alt="Planting Campaign"
           />
           <CardContent>

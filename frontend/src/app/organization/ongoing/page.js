@@ -1,5 +1,5 @@
-import ResponsiveDrawer from "../dashboard/components/drawer";
-import OngoingEventContent from "./components/ongingeventContent";
+import ResponsiveDrawer from "../components/drawer";
+import OngoingEventContent from "./ongingeventContent";
 
 export default function Event(){
 

@@ -1,6 +1,6 @@
 "use client";
 
-import Navbar from '../../dashboard/components/Navbar';
+import Navbar from '../../components/Navbar';
 import { useState } from "react";
 import {
   TextField,

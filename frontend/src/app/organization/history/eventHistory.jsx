@@ -1,18 +1,18 @@
-import { Box, Typography, Card, CardContent, Grid, CardMedia, Chip, LinearProgress, IconButton } from "@mui/material";
+import { Box, Typography, Card, CardContent, Grid, CardMedia, Chip,Button } from "@mui/material";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import EditIcon from '@mui/icons-material/Edit';
+import DoneAllIcon from '@mui/icons-material/DoneAll'; // For completed status
 
-const ongoingEvents = [
+const historyEvents = [
     {
         title: "Tree Planting Initiative",
         description: "Assisted in planting over 100 trees as part of an environmental conservation effort.",
         location: "Greenfield Park, Lapu-Lapu City, Cebu",
         startDate: "5/4/2024 1:00:00 PM",
         endDate: "5/15/2024 11:59:00 PM",
-        progress: 40,
+        participants: 60,  // Number of participants who joined
         skills: ["Planting", "Team Building"],
-        image: "/Planting.jpg"
+        image: "/images/Planting.jpg"
     },
     {
         title: "Community Donation Drive",
@@ -20,31 +20,33 @@ const ongoingEvents = [
         location: "Community Hall, Lapu-Lapu City, Cebu",
         startDate: "7/15/2024 9:00:00 AM",
         endDate: "7/18/2024 5:00:00 PM",
-        progress: 80,
+        participants: 70,
         skills: ["Logistics", "Team Coordination"],
-        image: "/Donation.jpg"
+        image: "/images/Donation.jpg"
+    },
+    {
+        title: "Community Cleaning Initiative",
+        description: "Join our Clean with Us campaign to help keep our environment pristine. Participate in local cleanup events and contribute to a healthier, cleaner community for everyone.",
+        location: "Central Plaza, Lapu-Lapu City, Cebu",
+        startDate: "8/12/2024 7:00:00 AM",
+        endDate: "8/12/2024 12:00:00 PM",
+        participants: 50,
+        skills: ["Waste Management", "Leadership"],
+        image: "/images/Cleaning.jpg"
     }
 ];
 
-export default function OngoingEventContent() {
+export default function EventHistory() {
     return (
         <Box sx={{ padding: '20px' }}>
             <Typography variant="h5" sx={{ textAlign: 'left', marginBottom: '20px' }}>
-                Ongoing Events
+                Event History
             </Typography>
             
             <Grid container spacing={3}>
-                {ongoingEvents.map((event, index) => (
+                {historyEvents.map((event, index) => (
                     <Grid item xs={12} key={index}>
-                        <Card sx={{ display: 'flex', boxShadow: 3, position: 'relative' }}>
-                            {/* Edit Button */}
-                            <IconButton 
-                                sx={{ position: 'absolute', top: 8, right: 8 }} 
-                                aria-label="edit"
-                            >
-                                <EditIcon />
-                            </IconButton>
-
+                        <Card sx={{ display: 'flex', boxShadow: 3 }}>
                             {/* Image Section */}
                             <CardMedia
                                 component="img"
@@ -79,12 +81,12 @@ export default function OngoingEventContent() {
                                             <strong>End Date:</strong> {event.endDate}
                                         </Typography>
                                     </Box>
-                                    
-                                    {/* Progress Bar */}
-                                    <Box sx={{ mt: 2 }}>
-                                        <LinearProgress variant="determinate" value={event.progress} />
-                                        <Typography variant="caption" sx={{ mt: 1 }}>
-                                            {event.progress}% Completed
+
+                                    {/* Completed Indicator */}
+                                    <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
+                                        <DoneAllIcon fontSize="small" color="success" />
+                                        <Typography variant="caption" sx={{ ml: 1 }}>
+                                            <strong>Event Completed</strong> with {event.participants} participants
                                         </Typography>
                                     </Box>
 
@@ -99,6 +101,14 @@ export default function OngoingEventContent() {
                         </Card>
                     </Grid>
                 ))}
+                <Box className="flex justify-center mt-6 m-auto">
+                <Button variant="outlined" color="primary" className="mr-2">
+                    Previous
+                </Button>
+                <Button variant="contained" color="primary">
+                    Next
+                </Button>
+      </Box>
             </Grid>
         </Box>
     );

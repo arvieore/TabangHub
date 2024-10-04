@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Navbar from '../../dashboard/components/Navbar';
+import Navbar from '../../components/Navbar';
 import { Box, List, ListItem, ListItemAvatar, ListItemText, Typography, TextField, Button, Paper, Avatar } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 

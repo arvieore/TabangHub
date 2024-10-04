@@ -1,5 +1,5 @@
-import ResponsiveDrawer from "./components/drawer";
-import OCards from './components/OrgCards';
+import ResponsiveDrawer from "../components/drawer";
+import OCards from './OrgCards';
 
 export default function Home() {
     return (

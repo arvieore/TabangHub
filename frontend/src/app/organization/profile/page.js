@@ -1,5 +1,5 @@
-import ResponsiveDrawer from "../dashboard/components/drawer";
-import OrgProfile from "./components/orgprofile";
+import ResponsiveDrawer from "../components/drawer";
+import OrgProfile from "./orgprofile";
 
 export default function Home(){
 

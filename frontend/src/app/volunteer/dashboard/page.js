@@ -1,11 +1,9 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Cards from "./components/CardSection";
+import Hero from "./DashboardComponents/Hero";
+import Cards from "./DashboardComponents/CardSection";
 
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
       <Hero />
       <Cards />
     </>

@@ -203,7 +203,7 @@ export default function History() {
         <Button variant="outlined" color="primary" className="mr-2">
           Previous
         </Button>
-        <Button variant="outlined" color="primary">
+        <Button variant="contained" color="primary">
           Next
         </Button>
       </Box>

@@ -1,11 +1,9 @@
-import NavBar from "../dashboard/components/Navbar";
-import Message from "./components/message";
+import Message from "./Messagecomponents/message";
 
 export default function Page(){
 
     return(
         <>
-            {/* <NavBar /> */}
             <Message />
         </>
     );

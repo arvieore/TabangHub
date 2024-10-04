@@ -1,5 +1,5 @@
-import ResponsiveDrawer from "../dashboard/components/drawer";
-import EventReport from "./components/report";
+import ResponsiveDrawer from "../components/drawer";
+import EventReport from "./report";
 
 export default function Home(){
 

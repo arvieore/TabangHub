@@ -69,7 +69,7 @@ export default function ResponsiveDrawer({ children, profileImage }) {
     <div>
       <Toolbar />
       <Box sx={{ display: 'flex', justifyContent: 'center', padding: '16px 0' }}>
-        <img src="/tabanghub3.png" alt="Logo" style={{ width: '120px', height: 'auto' }} />
+        <img src="/images/tabanghub3.png" alt="Logo" style={{ width: '120px', height: 'auto' }} />
       </Box>
 
       <List>
@@ -80,7 +80,7 @@ export default function ResponsiveDrawer({ children, profileImage }) {
           { text: "History", icon: <HistoryIcon /> },
         ].map((item) => (
           <ListItem button key={item.text}>
-            <ListItemIcon sx={{ color: '#7b9acb' }}>{item.icon}</ListItemIcon>
+            <ListItemIcon sx={{ color: '#34e7b5' }}>{item.icon}</ListItemIcon>
             <ListItemText primary={item.text} sx={{ color: '#7b9acb' }} />
           </ListItem>
         ))}
