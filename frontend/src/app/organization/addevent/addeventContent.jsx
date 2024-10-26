@@ -5,6 +5,7 @@ import { Box, TextField, Typography, Button, Grid, Chip, InputLabel, MenuItem, S
 
 export default function Event() {
     const [allowDonation, setAllowDonation] = useState(false); // Donation checkbox state
+    const today = new Date().toISOString().split('T')[0];
 
     return (
         <Box sx={{ padding: '20px', backgroundColor: '#f4f6f8', borderRadius: '15px', marginBottom: '1%' }}>
@@ -46,9 +47,13 @@ export default function Event() {
                 <Grid item xs={12} sm={6}>
                     <TextField
                         fullWidth
+                        id="date"
                         label="Start Date"
-                        variant="outlined"
-                        placeholder="MM/DD/YYYY"
+                        type="date"
+                        defaultValue={today}
+                        InputLabelProps={{
+                        shrink: true,
+                        }}
                     />
                 </Grid>
 
@@ -56,11 +61,16 @@ export default function Event() {
                 <Grid item xs={12} sm={6}>
                     <TextField
                         fullWidth
+                        id="date"
                         label="End Date"
-                        variant="outlined"
-                        placeholder="MM/DD/YYYY"
+                        type="date"
+                        defaultValue={today}
+                        InputLabelProps={{
+                        shrink: true,
+                        }}
                     />
                 </Grid>
+
 
                 {/* Skills Dropdown */}
                 <Grid item xs={12}>

@@ -7,6 +7,7 @@ import EventNoteIcon from '@mui/icons-material/EventNote';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import HistoryIcon from '@mui/icons-material/History';
+import Link from 'next/link';
 
 const drawerWidth = 240;
 const settings = ['Profile', 'Logout'];
@@ -112,9 +113,31 @@ export default function ResponsiveDrawer({ children, profileImage }) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
+          {/* <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
             Tabang Hub
+          </Typography> */}
+      
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{
+              flexGrow: 1,
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: '#00df9a',
+              textDecoration: 'none',
+              mr: 2, display: { md: "block" }
+            }}
+          >
+            <Link href="/organization/dashboard">
+              TABANG-HUB
+            </Link>
           </Typography>
+
 
           {/* Profile Picture */}
           <Box sx={{ flexGrow: 0 }}>

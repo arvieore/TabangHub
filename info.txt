@@ -1,4 +1,5 @@
 Repository link: https://github.com/arvieore/TabangHub.git
-Name: Arvie Rivas Ore
-Capstone Group Name: Capstone Enjoyers
-Capstone UI Number of pages: 
+
+Progress Insight:
+
+I added screens for the organization side, including the Dashboard, Event List, Ongoing Events, Reports, and History. The Dashboard provides an overview of key stats, like the total number of events, donations, and volunteers. In the Event List, the organization can click on any event to view its details, and there’s also an Add Event button that allows them to create new events. When adding an event, the organization can set required skills, decide if donations are accepted, and enter details such as the event title, description, number of volunteers needed, start and end dates, and location. The Ongoing Events section shows the progress of events currently happening. Reports display detailed information for each event, and History moves completed events here once they end.
