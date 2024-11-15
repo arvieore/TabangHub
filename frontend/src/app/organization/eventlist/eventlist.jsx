@@ -1,6 +1,5 @@
 'use client'
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Card, CardContent, Typography, List, ListItem, Button, Box, Divider, Stack, 
   Dialog, DialogTitle, DialogContent, DialogActions, IconButton 
@@ -13,49 +12,53 @@ import SkillsIcon from '@mui/icons-material/Build';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function EventList() {
-  const initialEvents = [
-    {
-      title: "Tree Planting Initiative",
-      description: "Assisted in planting over 100 trees as part of an environmental conservation effort.",
-      location: "Greenfield Park, Lapu-Lapu City, Cebu",
-      startDate: "5/4/2024 1:00:00 PM",
-      endDate: "5/15/2024 11:59:00 PM",
-      participants: 60,
-      skills: ["Planting", "Team Building"],
-      image: "/images/Planting.jpg"
-    },
-    {
-      title: "Community Donation Drive",
-      description: "Organized a donation drive to collect essential supplies for families in need.",
-      location: "Community Hall, Lapu-Lapu City, Cebu",
-      startDate: "7/15/2024 9:00:00 AM",
-      endDate: "7/18/2024 5:00:00 PM",
-      participants: 70,
-      skills: ["Logistics", "Team Coordination"],
-      image: "/images/Donation.jpg"
-    },
-    {
-      title: "Community Cleaning Initiative",
-      description: "Join our Clean with Us campaign to help keep our environment pristine. Participate in local cleanup events and contribute to a healthier, cleaner community for everyone.",
-      location: "Central Plaza, Lapu-Lapu City, Cebu",
-      startDate: "8/12/2024 7:00:00 AM",
-      endDate: "8/12/2024 12:00:00 PM",
-      participants: 50,
-      skills: ["Waste Management", "Leadership"],
-      image: "/images/Cleaning.jpg"
-    }
-  ];
-
-  const [events, setEvents] = useState(initialEvents);
+  const [events, setEvents] = useState([]);
   const [open, setOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
+
+  useEffect(() => {
+    const initialEvents = [
+      {
+        title: "Tree Planting Initiative",
+        description: "Assisted in planting over 100 trees as part of an environmental conservation effort.",
+        location: "Greenfield Park, Lapu-Lapu City, Cebu",
+        startDate: "5/4/2024 1:00:00 PM",
+        endDate: "5/15/2024 11:59:00 PM",
+        participants: 60,
+        skills: ["Planting", "Team Building"],
+        image: "/images/Planting.jpg"
+      },
+      {
+        title: "Community Donation Drive",
+        description: "Organized a donation drive to collect essential supplies for families in need.",
+        location: "Community Hall, Lapu-Lapu City, Cebu",
+        startDate: "7/15/2024 9:00:00 AM",
+        endDate: "7/18/2024 5:00:00 PM",
+        participants: 70,
+        skills: ["Logistics", "Team Coordination"],
+        image: "/images/Donation.jpg"
+      },
+      {
+        title: "Community Cleaning Initiative",
+        description: "Join our Clean with Us campaign to help keep our environment pristine. Participate in local cleanup events and contribute to a healthier, cleaner community for everyone.",
+        location: "Central Plaza, Lapu-Lapu City, Cebu",
+        startDate: "8/12/2024 7:00:00 AM",
+        endDate: "8/12/2024 12:00:00 PM",
+        participants: 50,
+        skills: ["Waste Management", "Leadership"],
+        image: "/images/Cleaning.jpg"
+      }
+    ];
+
+    // Set initial events
+    setEvents(initialEvents);
+  }, []);
 
   // Function to handle opening the modal
   const handleOpenModal = (event) => {
     setSelectedEvent(event);
     setOpen(true);
   };
-
   // Function to handle closing the modal
   const handleCloseModal = () => {
     setOpen(false);
