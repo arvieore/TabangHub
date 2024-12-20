@@ -74,13 +74,13 @@ export default function ResponsiveDrawer({ children, profileImage }) {
       </Box>
 
       <List>
-        {[{ text: "Dashboard", icon: <DashboardIcon /> },
-          { text: "Event List", icon: <EventNoteIcon /> },
-          { text: "Ongoing Event", icon: <EventAvailableIcon /> },
-          { text: "Reports", icon: <AssessmentIcon /> },
-          { text: "History", icon: <HistoryIcon /> },
+        {[{ text: "Dashboard", icon: <DashboardIcon />, href: "/organization/dashboard" },
+          { text: "Event List", icon: <EventNoteIcon />, href: "/organization/eventlist" },
+          { text: "Ongoing Event", icon: <EventAvailableIcon />, href: "/organization/ongoing" },
+          { text: "Reports", icon: <AssessmentIcon />, href: "/organization/report"},
+          { text: "History", icon: <HistoryIcon />, href: "/organization/history" },
         ].map((item) => (
-          <ListItem button key={item.text}>
+          <ListItem button key={item.text} component="a" href={item.href}>
             <ListItemIcon sx={{ color: '#34e7b5' }}>{item.icon}</ListItemIcon>
             <ListItemText primary={item.text} sx={{ color: '#7b9acb' }} />
           </ListItem>

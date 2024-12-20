@@ -35,7 +35,7 @@ export default function DonationHistory() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto mt-[100px] mb-6 p-4 bg-slate-100 rounded rounded-xl">
+    <div className="max-w-6xl mx-auto mt-[100px] mb-6 p-4 bg-slate-100 rounded-xl">
       <Typography variant="h4" className="text-center mb-6">
         Donation History
       </Typography>
